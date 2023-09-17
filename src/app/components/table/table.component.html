@@ -1,14 +1,12 @@
 <table class="table">
   <thead>
   <tr>
-    <th scope="col" *ngFor="let item of listColumn">{{item}}</th>
+    <th scope="col" *ngFor="let item of listColumn">{{item.value}}</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let data of listData">
-    <td>{{ data.id }}</td>
-    <td>{{ data.title }}</td>
-    <td>{{ data.status }}</td>
+  <tr *ngFor="let item of listData">
+    <td *ngFor="let columnName of listColumn">{{ item[columnName.key] }}</td>
   </tr>
   </tbody>
 </table>

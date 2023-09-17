@@ -6,6 +6,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
-  @Input() listColumn : string[] = [];
+  @Input() listColumn : any[] = [];
   @Input() listData : any[] = [];
 }
