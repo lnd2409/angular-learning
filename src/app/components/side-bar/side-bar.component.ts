@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, NgModule} from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
@@ -6,18 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent {
-  memu: any = [
-    {
-      title: 'Home',
-      url: '/home'
-    },
-    {
-      title: 'About',
-      url: '/about'
-    },
-    {
-      title: 'Contact',
-      url: '/contact'
-    }
-  ]
 }
